@@ -1,0 +1,5 @@
+#!/bin/sh
+export CLASSPATH=/home/robot/my-robot-1.0.0.jar:/home/robot/ev3dev-lang-java-2.3.0.jar:/home/robot/lejos-commons-0.7.1.jar:slf4j-api-1.7.25.jar:slf4j-simple-1.7.25.jar
+clear
+echo "Starting robot..."
+~/jdk10-ev3/bin/java -Dorg.slf4j.simpleLogger.defaultLogLevel=warn smartev3.MyRobot $*
